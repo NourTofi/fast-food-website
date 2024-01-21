@@ -1,8 +1,13 @@
-import { React } from "react";
+import React from "react";
 import icons from "./LeftBarConstant";
 import { AiOutlineClose } from "react-icons/ai";
 
-const LeftBar = ({ nav, setNav }) => {
+interface LeftBarProps {
+  nav: boolean;
+  setNav: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const LeftBar: React.FC<LeftBarProps> = ({ nav, setNav }) => {
   return (
     <>
       {nav ? (
@@ -28,7 +33,10 @@ const LeftBar = ({ nav, setNav }) => {
         <nav>
           <ul className="flex flex-col p-4 text-gray-800">
             {icons.map((item) => (
-              <li key={item.name} className="text-xl py-4 flex ">
+              <li
+                key={item.name}
+                className="text-xl py-4 flex "
+              >
                 {item.icon}
                 {item.name}
               </li>

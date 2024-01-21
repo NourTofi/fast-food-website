@@ -1,10 +1,18 @@
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 
-const LeftNav = ({ nav, setNav }) => {
+interface LeftNavProps {
+  nav: boolean;
+  setNav: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const LeftNav: React.FC<LeftNavProps> = ({ nav, setNav }) => {
   return (
     <div className="flex items-center">
-      <div onClick={() => setNav(!nav)} className="cursor-pointer">
+      <div
+        onClick={() => setNav(!nav)}
+        className="cursor-pointer"
+      >
         <AiOutlineMenu size={30} />
       </div>
       <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2">

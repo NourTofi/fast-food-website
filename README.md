@@ -23,7 +23,9 @@ and then you write:
 and then you have to add these lines on your index.css file:
 
 ## `@tailwind base;`
+
 ## `@tailwind components;`
+
 ## `@tailwind utilities;`
 
 now you able to write your style at Tailwind CSS.
@@ -31,4 +33,3 @@ now you able to write your style at Tailwind CSS.
 for auto complete you need to add these extension:
 
 ## `Tailwind CSS IntelliSense`
-
