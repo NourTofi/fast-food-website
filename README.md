@@ -12,7 +12,6 @@ Fast Food Corner is designed to provide users with a digital space to explore ou
 
 - React
 - Tailwind CSS
-- Node.js for backend (if applicable)
 
 ### Installing
 
