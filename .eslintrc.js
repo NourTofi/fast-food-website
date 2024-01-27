@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2016: true,
   },
   extends: [
     "eslint:recommended",
@@ -26,9 +26,6 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["@typescript-eslint"],
-  rules: {
-    "prettier/prettier": "error",
-  },
   settings: {
     react: {
       version: "detect",
